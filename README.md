@@ -9,7 +9,7 @@ Welcome to my *Tourism Travel Website*! This website provides information about 
 - 🎨 Styled with CSS and JavaScript  
 
 ## 🚀 Live Demo  
-🔗 [Visit the Website]https://crimson-penguin-z6mqng.mytouristsites.com/  
+🔗 [Visit the Website]https://crimson-penguin-z6mqng.mystrikingly.com/  
 
 ## 🛠 Technologies Used  
 - HTML  
