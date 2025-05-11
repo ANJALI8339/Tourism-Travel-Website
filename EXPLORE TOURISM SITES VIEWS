@@ -1,38 +1,90 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tourism Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Explore Tourist Sites</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card .info {
+      padding: 15px;
+    }
+    .card .info h3 {
+      margin: 0;
+      color: #34495e;
+    }
+    .card .info p {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to ExploreWorld</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Explore beautiful places with us!</p>
-    </section>
+  <h1>Explore Tourist Sites</h1>
 
-    <section id="destinations">
-        <h2>Top Destinations</h2>
-        <p>Discover breathtaking locations for your next trip.</p>
-    </section>
+  <div class="gallery">
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Eiffel_Tower_Paris.jpg" alt="Eiffel Tower">
+      <div class="info">
+        <h3>Eiffel Tower, France</h3>
+        <p>One of the world's most famous landmarks, located in Paris.</p>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 ExploreWorld</p>
-    </footer>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Taj-Mahal.jpg" alt="Taj Mahal">
+      <div class="info">
+        <h3>Taj Mahal, India</h3>
+        <p>An ivory-white marble mausoleum on the south bank of the Yamuna river.</p>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Great_Wall_of_China_July_2006.JPG" alt="Great Wall">
+      <div class="info">
+        <h3>Great Wall of China</h3>
+        <p>A historic fortification stretching across northern China.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Statue_of_Liberty_7.jpg" alt="Statue of Liberty">
+      <div class="info">
+        <h3>Statue of Liberty, USA</h3>
+        <p>A symbol of freedom and democracy in New York City.</p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
